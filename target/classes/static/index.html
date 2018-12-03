@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<script src="registration.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		window.onload = function() {
+  		getAllEmployeeDetails();
+};
+
+	</script>
+
+<head>
+<title>Employee Registration Form</title>
+</head>
+<body>
+	<h1>Enter the Employee details</h1>
+
+	<div class="form-group">
+		<label class="control-label col-md-2 col-sm-2 col-xs-12">Employee
+			Id</label>
+		<div class="col-md-3 col-sm-3 col-xs-12">
+			<input type="text" id="employeeId"
+				class="form-control col-md-7 col-xs-12">
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-md-2 col-sm-2 col-xs-12">Employee
+				Name</label>
+			<div class="col-md-3 col-sm-3 col-xs-12">
+				<input type="text" id="employeeName"
+					class="form-control col-md-7 col-xs-12">
+			</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-md-2 col-sm-2 col-xs-12">Address</label>
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<input type="text" id="address"
+							class="form-control col-md-7 col-xs-12">
+					</div>
+
+					<div class="form-group">
+						<button onclick="submitData()">Submit</button>
+					</div>
+		<br><br><br><br>
+		<h2>Employee Details</h2>
+		<ul id="employeeList"></ul>	
+		<h2>Fetch Employee By ID</h2>	
+						<div class="form-group">
+					<label class="control-label col-md-2 col-sm-2 col-xs-12">Employee ID</label>
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<input type="text" id="singleEmployeeID"
+							class="form-control col-md-7 col-xs-12">
+					</div>
+
+					<div class="form-group">
+						<button onclick="getSingleEmployeeDetails()">Get Details</button>
+					</div>	
+					<ul id="singleEmployee"></ul>		
+</body>
+</html>
